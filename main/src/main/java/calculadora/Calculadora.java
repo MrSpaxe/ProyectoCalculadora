@@ -17,8 +17,12 @@ public class Calculadora {
             case RESTA:
                 System.out.println("Resta = "+resta(num1, num2));
                 break;
+            case MULTIPLICACION:
+                System.out.println("Multiplicacion = "+multiplicacion(num1, num2));
+                break;
             default:
                 System.out.println("Error !");
+            
         }
     }
     private int suma(int num1, int num2) {
@@ -26,5 +30,8 @@ public class Calculadora {
     }
     private int resta(int num1, int num2) {
         return num1 - num2;
+    }
+    private int multiplicacion(int num1, int num2) {
+        return num1 * num2;
     }
 }
