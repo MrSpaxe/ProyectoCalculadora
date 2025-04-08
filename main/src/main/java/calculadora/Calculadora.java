@@ -12,10 +12,39 @@ public class Calculadora {
     public void realizarOperacion(Operaciones operacion){
         switch (operacion) {
             case SUMA:
-                System.out.println("Suma = " + (num1+num2));
+                System.out.println("Suma = "+suma(num1, num2));
+                break;
+            case RESTA:
+                System.out.println("Resta = "+resta(num1, num2));
+                break;
+            case MULTIPLICACION:
+                System.out.println("Multiplicacion = "+multiplicacion(num1, num2));
+                break;
+            case DIVISION:
+                try {
+                    System.out.println("Division = "+division(num1, num2));
+                } catch (ArithmeticException e) {
+                    System.out.println(e.getMessage());
+                }
                 break;
             default:
                 System.out.println("Error !");
+            
         }
+    }
+    private int suma(int num1, int num2) {
+        return num1 + num2;
+    }
+    private int resta(int num1, int num2) {
+        return num1 - num2;
+    }
+    private int multiplicacion(int num1, int num2) {
+        return num1 * num2;
+    }
+    private double division(int num1, int num2) throws  ArithmeticException {
+        if (num2 == 0) {
+            throw new ArithmeticException("No se puede dividir entre cero");
+        }
+        return (double)num1 / num2;
     }
 }
