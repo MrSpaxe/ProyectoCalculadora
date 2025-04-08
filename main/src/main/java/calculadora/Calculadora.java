@@ -12,7 +12,7 @@ public class Calculadora {
     public void realizarOperacion(Operaciones operacion){
         switch (operacion) {
             case SUMA:
-                System.out.println(num1+num2);
+                System.out.println("Suma = " + (num1+num2));
                 break;
             default:
                 System.out.println("Error !");
