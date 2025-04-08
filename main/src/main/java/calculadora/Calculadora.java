@@ -12,10 +12,19 @@ public class Calculadora {
     public void realizarOperacion(Operaciones operacion){
         switch (operacion) {
             case SUMA:
-                System.out.println(num1+num2);
+                System.out.println("Suma = "+suma(num1, num2));
+                break;
+            case RESTA:
+                System.out.println("Resta = "+resta(num1, num2));
                 break;
             default:
                 System.out.println("Error !");
         }
+    }
+    private int suma(int num1, int num2) {
+        return num1 + num2;
+    }
+    private int resta(int num1, int num2) {
+        return num1 - num2;
     }
 }
