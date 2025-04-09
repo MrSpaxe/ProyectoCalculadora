@@ -20,13 +20,6 @@ public class Calculadora {
             case MULTIPLICACION:
                 System.out.println("Multiplicacion = "+multiplicacion(num1, num2));
                 break;
-            case DIVISION:
-                try {
-                    System.out.println("Division = "+division(num1, num2));
-                } catch (ArithmeticException e) {
-                    System.out.println(e.getMessage());
-                }
-                break;
             default:
                 System.out.println("Error !");
             
