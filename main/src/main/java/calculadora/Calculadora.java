@@ -20,7 +20,6 @@ public class Calculadora {
             case MULTIPLICACION:
                 System.out.println("Multiplicacion = "+multiplicacion(num1, num2));
                 break;
-<<<<<<< HEAD
             case DIVISION:
                 try {
                     System.out.println("Division = "+division(num1, num2));
@@ -28,8 +27,6 @@ public class Calculadora {
                     System.out.println(e.getMessage());
                 }
                 break;
-=======
->>>>>>> 1fc8023 (Implementamos el metodo multiplicacion)
             default:
                 System.out.println("Error !");
             
@@ -44,13 +41,10 @@ public class Calculadora {
     private int multiplicacion(int num1, int num2) {
         return num1 * num2;
     }
-<<<<<<< HEAD
     private double division(int num1, int num2) throws  ArithmeticException {
         if (num2 == 0) {
             throw new ArithmeticException("No se puede dividir entre cero");
         }
         return (double)num1 / num2;
     }
-=======
->>>>>>> 1fc8023 (Implementamos el metodo multiplicacion)
 }
